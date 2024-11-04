@@ -295,6 +295,7 @@ class InertialTarget(Target):
         self.occultation = None
         self.subexposure_count = 0
         self.index = None # assigns the tile index in the order of its initial observation 
+        self.timestamp = None # records the time when the tile begins imaging
 
     def pointing(self, satellite=None, time=None):
         """
